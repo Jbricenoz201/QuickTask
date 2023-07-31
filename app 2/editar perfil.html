@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTask - Editar Datos</title>
+    <link rel="stylesheet" href="editar perfil.css">
+</head>
+<body>
+    <header>
+        <h1><a>QuickTask</a></h1>
+        <nav>
+            <ul>
+                <li><a href="quick task.html">Inicio</a></li>
+                <li><a href="perfil.html">Mi Perfil</a></li>
+                <!-- Pestañas de inicio de sesión y registro -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="editar-datos">
+            <h2>Editar Datos Personales</h2>
+            <div class="edit-profile">
+                <form id="edit-profile-form">
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username" value="Usuario123" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" value="user@example.com" required>
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <button type="submit">Guardar Cambios</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="editar-contacto">
+            <h2>Editar Contacto</h2>
+            <div class="edit-contact">
+                <form id="edit-contact-form">
+                    <label for="name">Nombre del Contacto:</label>
+                    <input type="text" id="name" name="name" value="Nombre del Contacto" required>
+
+                    <label for="phone">Número de Teléfono:</label>
+                    <input type="text" id="phone" name="phone" value="123-456-7890" required>
+
+                    <button type="submit">Guardar Cambios</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+
+    <script>
+        // Agrega aquí el código JavaScript para manejar la funcionalidad de los formularios
+        // Por ejemplo, interacción con el servidor, manejo de datos, etc.
+        const editProfileForm = document.getElementById('edit-profile-form');
+        const editContactForm = document.getElementById('edit-contact-form');
+
+        editProfileForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert('Datos personales guardados correctamente.');
+            // Agrega aquí el código para enviar los datos al servidor si es necesario
+        });
+
+        editContactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert('Contacto guardado correctamente.');
+            // Agrega aquí el código para enviar los datos al servidor si es necesario
+        });
+    </script>
+</body>
+</html>

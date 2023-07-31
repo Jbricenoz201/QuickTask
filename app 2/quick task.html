@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTask</title>
+    <link rel="stylesheet" href="quick task.css">
+</head>
+<body>
+    <header>
+        <h1>QuickTask</h1>
+        <nav>
+            <ul>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+                <li><a href="tareas.html">Tareas</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a QuickTask</h2>
+            <!-- Contenido de la página de inicio -->
+        </section>
+
+        <section id="tareas">
+            <h2>Tareas Pendientes</h2>
+            <!-- Contenido de la página de tareas -->
+        </section>
+
+        <section id="blogs">
+            <h2>Blogs de Notas</h2>
+            <!-- Contenido de la página de blogs -->
+            <div class="blog-post">
+                <h3>Título del Blog 1</h3>
+                <p>Contenido del blog...</p>
+                <!-- Aquí puedes mostrar más detalles del blog, como el autor, fecha, etc. -->
+            </div>
+            <div class="blog-post">
+                <h3>Título del Blog 2</h3>
+                <p>Contenido del blog...</p>
+            </div>
+            <!-- Agregar más blogs de notas -->
+        </section>
+
+        <section id="chat">
+            <h2>Chat de Grupos</h2>
+            <!-- Contenido de la página de chat de grupos -->
+        </section>
+
+        <section id="perfil">
+            <h2>Mi Perfil</h2>
+            <!-- Contenido de la página de perfil -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+
+    <script>
+        // Función para cambiar el color del encabezado al hacer clic
+        const header = document.querySelector('header');
+        header.addEventListener('click', () => {
+            header.style.backgroundColor = getRandomColor();
+        });
+
+        // Función para obtener un color aleatorio en formato hexadecimal
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Función para agregar una clase activa al enlace de navegación seleccionado
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+             //link.addEventListener('click', (event) => {
+                event.preventDefault();
+                // Removemos la clase 'active' de todos los enlaces
+                navLinks.forEach(link => link.classList.remove('active'));
+                // Agregamos la clase 'active' al enlace seleccionado
+                event.target.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

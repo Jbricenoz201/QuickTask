@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación QuickTask - Agenda Telefónica</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header>
+        <h1><a>QuickTask</a></h1>
+        <nav>
+            <ul>
+                <li><a href="quick task.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="tareas.html">Tareas nuevas</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="agenda">
+            <h2>Agenda Telefónica</h2>
+            <div class="contacts">
+                <div class="contact">
+                    <h3>Nombre del Contacto 1</h3>
+                    <p>Número de Teléfono: 123-456-7890</p>
+                    <button onclick="editContact('contact1')">Editar Contacto</button>
+                </div>
+                <div class="contact">
+                    <h3>Nombre del Contacto 2</h3>
+                    <p>Número de Teléfono: 987-654-3210</p>
+                    <button onclick="editContact('contact2')">Editar Contacto</button>
+                </div>
+                <!-- Agregar más contactos -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+
+    <script>
+        function editContact(contactId) {
+            // Lógica para editar el contacto con el ID proporcionado
+            // Redireccionar a la página de edición de contacto con el ID del contacto
+            window.location.href = `editar_contacto.html?id=${contactId}`;
+        }
+    </script>
+</body>
+</html>

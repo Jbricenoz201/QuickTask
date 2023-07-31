@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #282c34;
+    padding: 1rem;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+header nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilos para la sección de Chat en Tiempo Real */
+.chat-messages {
+    max-height: 300px;
+    overflow-y: scroll;
+    background-color: #2e2e2e;
+    padding: 1rem;
+}
+
+.message {
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+}
+
+.received {
+    background-color: #61dafb;
+    color: #ffffff;
+}
+
+.sent {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#message-input {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+#send-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}

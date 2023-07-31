@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #282c34;
+    padding: 1rem;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+header nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilos para los elementos de la sección de tareas */
+.task-planning,
+.real-time-update,
+.resource-management,
+.process-automation,
+.reminders-alerts {
+    background-color: #2e2e2e;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.task-planning h3,
+.real-time-update h3,
+.resource-management h3,
+.process-automation h3,
+.reminders-alerts h3 {
+    color: #ffffff;
+}
+
+.task-planning p,
+.real-time-update label,
+.resource-management select,
+.process-automation label,
+.reminders-alerts label {
+    color: #ffffff;
+}
+
+.real-time-update label,
+.process-automation label,
+.reminders-alerts label {
+    display: flex;
+    align-items: center;
+}
+
+.real-time-update input[type="checkbox"],
+.process-automation input[type="checkbox"],
+.reminders-alerts input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Estilos para el enlace activo en el menú de navegación */
+nav a.active {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.3rem;
+}
+
+/* Estilos para el efecto de cambio de color en el encabezado al hacer clic */
+header.clicked {
+    background-color: #61dafb;
+    transition: background-color 0.5s ease-in-out;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación QuickTask - Tareas</title>
+    <link rel="stylesheet" href="tareas.css">
+</head>
+<body>
+    <header>
+        <h1><a>QuickTask</a></h1>
+        <nav>
+            <ul>
+                <li><a href="quick task.css">Inicio</a></li>
+                <li><a href="contacto.html">contactos</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tareas">
+            <h2>Tareas</h2>
+            <div class="task-planning">
+                <h3>Planificación</h3>
+                <!-- Contenido y elementos interactivos relacionados con la planificación -->
+                <p>Fecha de inicio: <input type="date"></p>
+                <p>Fecha de finalización: <input type="date"></p>
+            </div>
+
+            <div class="real-time-update">
+                <h3>Actualización en tiempo real</h3>
+                <!-- Contenido y elementos interactivos relacionados con la actualización en tiempo real -->
+                <input type="checkbox" id="real-time-update-toggle">
+                <label for="real-time-update-toggle">Habilitar actualización en tiempo real</label>
+            </div>
+
+            <div class="resource-management">
+                <h3>Gestión de recursos</h3>
+                <!-- Contenido y elementos interactivos relacionados con la gestión de recursos -->
+                <select>
+                    <option value="resource1">Recurso 1</option>
+                    <option value="resource2">Recurso 2</option>
+                    <!-- Agregar más recursos -->
+                </select>
+            </div>
+
+            <div class="process-automation">
+                <h3>Automatización de procesos</h3>
+                <!-- Contenido y elementos interactivos relacionados con la automatización de procesos -->
+                <input type="checkbox" id="process-automation-toggle">
+                <label for="process-automation-toggle">Habilitar automatización de procesos</label>
+            </div>
+
+            <div class="reminders-alerts">
+                <h3>Recordatorios y Alertas</h3>
+                <!-- Contenido y elementos interactivos relacionados con los recordatorios y alertas -->
+                <input type="checkbox" id="reminders-alerts-toggle">
+                <label for="reminders-alerts-toggle">Habilitar recordatorios y alertas</label>
+            </div>
+
+            <!-- Agregar más secciones para cada punto mencionado -->
+
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+
+    <script>
+        // Agrega aquí el código JavaScript para manejar la funcionalidad de los elementos interactivos
+        // Por ejemplo, interacción con el servidor, manejo de datos, etc.
+        const realTimeUpdateToggle = document.getElementById('real-time-update-toggle');
+        const processAutomationToggle = document.getElementById('process-automation-toggle');
+        const remindersAlertsToggle = document.getElementById('reminders-alerts-toggle');
+
+        realTimeUpdateToggle.addEventListener('change', (event) => {
+            if (event.target.checked) {
+                alert('Actualización en tiempo real habilitada');
+            } else {
+                alert('Actualización en tiempo real deshabilitada');
+            }
+            // Agrega aquí el código para enviar la opción seleccionada al servidor si es necesario
+        });
+
+        processAutomationToggle.addEventListener('change', (event) => {
+            if (event.target.checked) {
+                alert('Automatización de procesos habilitada');
+            } else {
+                alert('Automatización de procesos deshabilitada');
+            }
+            // Agrega aquí el código para enviar la opción seleccionada al servidor si es necesario
+        });
+
+        remindersAlertsToggle.addEventListener('change', (event) => {
+            if (event.target.checked) {
+                alert('Recordatorios y alertas habilitados');
+            } else {
+                alert('Recordatorios y alertas deshabilitados');
+            }
+            // Agrega aquí el código para enviar la opción seleccionada al servidor si es necesario
+        });
+    </script>
+</body>
+</html>

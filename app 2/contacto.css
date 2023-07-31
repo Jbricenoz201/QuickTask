@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #282c34;
+    padding: 1rem;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+header nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilos para la sección de la agenda telefónica */
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+.contact {
+    background-color: #2e2e2e;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact h3 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.contact p {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.contact button {
+    background-color: #61dafb;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.contact button:hover {
+    background-color: #50c4f5;
+}

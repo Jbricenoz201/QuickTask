@@ -1,0 +1,63 @@
+/* Agregar aquí los estilos adicionales para el diseño minimalista futurista */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #282c34;
+    padding: 1rem;
+}
+
+header h1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+#blogs {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-post {
+    background-color: #2e2e2e;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h3 {
+    color: #ffffff;
+}
+
+.blog-post p {
+    color: #f0f0f0;
+}
