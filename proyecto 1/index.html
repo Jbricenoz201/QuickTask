@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTask - Recordatorios y Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>QuickTask</h1>
+    </header>
+
+    <main>
+        <section id="crear-tarea">
+            <h2>Crear Tarea</h2>
+            <form id="tarea-form">
+                <label for="titulo">Título de la Tarea:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="fecha-vencimiento">Fecha de Vencimiento:</label>
+                <input type="date" id="fecha-vencimiento" name="fecha-vencimiento" required>
+
+                <label for="prioridad">Prioridad:</label>
+                <select id="prioridad" name="prioridad">
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+
+                <label for="categoria">Categoría:</label>
+                <input type="text" id="categoria" name="categoria">
+
+                <button type="submit">Crear Tarea</button>
+            </form>
+        </section>
+
+        <section id="tareas">
+            <h2>Tareas</h2>
+            <div id="lista-tareas">
+                <!-- Aquí se mostrarán las tareas creadas -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
